@@ -6,168 +6,321 @@
     <title>Test</title>
     <link rel="stylesheet" href="style/main.css" />
   </head>
-<body>
-  <!-- Support Chat -->
-  <button class="contact-ai">
-    <span>Support</span
-    ><svg
-    width="25"
-    height="25"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    aria-hidden="true"
-    >
-    <path
-    d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"
-    ></path>
-    </svg>
-  </button>
-  <!-- Welcome Page -->
-  <div class="first-page">
-      <img class="background-photo" src="image/info-ditails.svg" alt="">
-    <!-- Nav Bar -->
-    <nav class="navbar">
-      <div class="box-logo">
-        <a><img src="image/Logo.svg" alt="Betaden-Logo" /></a>
-      </div>
-      <button id="chaing-light"></button>
-      <button id="chaing-language"></button>
-      <input type="search" placeholder="Search Of Corses" />
-      <ul>
-        <li><a href="#">Create an account</a></li>
-        <li><a href="#">Log in</a></li>
-      </ul>
-    </nav>
-    <!-- Home Page -->
-    <div class="home-page">
-      <h1>
-      A comprehensive platform with everything a student needs to excel
-      </h1>
-      <p>
-      An integrated platform that helps you study correctly, choose your
-      teachers, and achieve your highest grades in high school with ease and
-      comfort.
-      </p>
-      <a href="#Singin">Start your journey</a>
-    </div>
-  </div>
-  <!-- Teacher Information -->
-  <div class="teacher">
-    <div class="container">
-      <div class="text-intro">
-        <h1>Our teachers are not like any other teachers!</h1>
+  <body>
+    <!-- Support Chat -->
+    <button class="contact-ai">
+      <span>Support</span
+      ><svg
+        width="25"
+        height="25"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path
+          d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"
+        ></path>
+      </svg>
+    </button>
+    <!-- Welcome Page -->
+    <div class="first-page">
+      <img class="background-photo" src="image/info-ditails.svg" alt="" />
+      <!-- Nav Bar -->
+      <nav class="navbar">
+        <div class="box-logo">
+          <a><img src="image/Logo.svg" alt="Betaden-Logo" /></a>
+        </div>
+        <button id="theme-toggle">
+          <!-- sun -->
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 1C11 0.447715 11.4477 0 12 0C12.5523 0 13 0.447715 13 1V3C13 3.55228 12.5523 4 12 4C11.4477 4 11 3.55228 11 3V1Z"
+              fill="#0F0F0F"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12ZM8.06167 12C8.06167 14.1751 9.82492 15.9383 12 15.9383C14.1751 15.9383 15.9383 14.1751 15.9383 12C15.9383 9.82492 14.1751 8.06167 12 8.06167C9.82492 8.06167 8.06167 9.82492 8.06167 12Z"
+              fill="#0F0F0F"
+            />
+            <path
+              d="M20.4853 3.51472C20.0947 3.12419 19.4616 3.12419 19.0711 3.51472L17.6568 4.92893C17.2663 5.31946 17.2663 5.95262 17.6568 6.34315C18.0474 6.73367 18.6805 6.73367 19.0711 6.34315L20.4853 4.92893C20.8758 4.53841 20.8758 3.90524 20.4853 3.51472Z"
+              fill="#0F0F0F"
+            />
+            <path
+              d="M1 13C0.447715 13 0 12.5523 0 12C0 11.4477 0.447715 11 1 11H3C3.55228 11 4 11.4477 4 12C4 12.5523 3.55228 13 3 13H1Z"
+              fill="#0F0F0F"
+            />
+            <path
+              d="M3.51472 3.51472C3.1242 3.90524 3.1242 4.53841 3.51472 4.92893L4.92894 6.34315C5.31946 6.73367 5.95263 6.73367 6.34315 6.34315C6.73368 5.95262 6.73368 5.31946 6.34315 4.92893L4.92894 3.51472C4.53841 3.12419 3.90525 3.12419 3.51472 3.51472Z"
+              fill="#0F0F0F"
+            />
+            <path
+              d="M11 21C11 20.4477 11.4477 20 12 20C12.5523 20 13 20.4477 13 21V23C13 23.5523 12.5523 24 12 24C11.4477 24 11 23.5523 11 23V21Z"
+              fill="#0F0F0F"
+            />
+            <path
+              d="M6.34315 17.6569C5.95263 17.2663 5.31946 17.2663 4.92894 17.6569L3.51473 19.0711C3.1242 19.4616 3.1242 20.0948 3.51473 20.4853C3.90525 20.8758 4.53842 20.8758 4.92894 20.4853L6.34315 19.0711C6.73368 18.6805 6.73368 18.0474 6.34315 17.6569Z"
+              fill="#0F0F0F"
+            />
+            <path
+              d="M21 13C20.4477 13 20 12.5523 20 12C20 11.4477 20.4477 11 21 11H23C23.5523 11 24 11.4477 24 12C24 12.5523 23.5523 13 23 13H21Z"
+              fill="#0F0F0F"
+            />
+            <path
+              d="M17.6568 17.6569C17.2663 18.0474 17.2663 18.6805 17.6568 19.0711L19.0711 20.4853C19.4616 20.8758 20.0947 20.8758 20.4853 20.4853C20.8758 20.0948 20.8758 19.4616 20.4853 19.0711L19.0711 17.6569C18.6805 17.2663 18.0474 17.2663 17.6568 17.6569Z"
+              fill="#0F0F0F"
+            />
+          </svg>
+          <!-- moon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"
+            style="transform: scale(1.2)"
+            fill="black"
+          >
+            <path
+              d="M303.3 112.7C196.2 121.2 112 210.8 112 320C112 434.9 205.1 528 320 528C353.3 528 384.7 520.2 412.6 506.3C309.2 482.9 232 390.5 232 280C232 214.2 259.4 154.9 303.3 112.7zM64 320C64 178.6 178.6 64 320 64C339.4 64 358.4 66.2 376.7 70.3C386.6 72.5 394 80.8 395.2 90.8C396.4 100.8 391.2 110.6 382.1 115.2C321.5 145.4 280 207.9 280 280C280 381.6 362.4 464 464 464C469 464 473.9 463.8 478.8 463.4C488.9 462.6 498.4 468.2 502.6 477.5C506.8 486.8 504.6 497.6 497.3 504.6C451.3 548.8 388.8 576 320 576C178.6 576 64 461.4 64 320z"
+            />
+          </svg>
+        </button>
+        <button id="chaing-language">
+          <svg
+            style="transform: scale(1.5)"
+            width="800px"
+            height="800px"
+            viewBox="0 0 24 24"
+            fill="#b9e3f7"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.6921 5H9.30807C8.15914 5.00635 7.0598 5.46885 6.25189 6.28576C5.44398 7.10268 4.99368 8.20708 5.00007 9.356V14.644C4.99368 15.7929 5.44398 16.8973 6.25189 17.7142C7.0598 18.5311 8.15914 18.9937 9.30807 19H14.6921C15.841 18.9937 16.9403 18.5311 17.7482 17.7142C18.5562 16.8973 19.0064 15.7929 19.0001 14.644V9.356C19.0064 8.20708 18.5562 7.10268 17.7482 6.28576C16.9403 5.46885 15.841 5.00635 14.6921 5Z"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8.00012 9C7.58591 9 7.25012 9.33579 7.25012 9.75C7.25012 10.1642 7.58591 10.5 8.00012 10.5V9ZM12.0001 10.5C12.4143 10.5 12.7501 10.1642 12.7501 9.75C12.7501 9.33579 12.4143 9 12.0001 9V10.5ZM11.2501 9.75C11.2501 10.1642 11.5859 10.5 12.0001 10.5C12.4143 10.5 12.7501 10.1642 12.7501 9.75H11.2501ZM12.7501 8C12.7501 7.58579 12.4143 7.25 12.0001 7.25C11.5859 7.25 11.2501 7.58579 11.2501 8H12.7501ZM12.0001 9C11.5859 9 11.2501 9.33579 11.2501 9.75C11.2501 10.1642 11.5859 10.5 12.0001 10.5V9ZM15.5001 10.5C15.9143 10.5 16.2501 10.1642 16.2501 9.75C16.2501 9.33579 15.9143 9 15.5001 9V10.5ZM15.5001 9C15.0859 9 14.7501 9.33579 14.7501 9.75C14.7501 10.1642 15.0859 10.5 15.5001 10.5V9ZM16.0001 10.5C16.4143 10.5 16.7501 10.1642 16.7501 9.75C16.7501 9.33579 16.4143 9 16.0001 9V10.5ZM16.1138 10.1811C16.3519 9.84222 16.2702 9.37443 15.9313 9.13631C15.5923 8.8982 15.1246 8.97992 14.8864 9.31885L16.1138 10.1811ZM11.2737 13.2783C10.9579 13.5464 10.9193 14.0197 11.1874 14.3354C11.4555 14.6512 11.9288 14.6898 12.2445 14.4217L11.2737 13.2783ZM9.29973 14.9003C8.96852 15.149 8.90167 15.6192 9.15041 15.9504C9.39916 16.2816 9.8693 16.3485 10.2005 16.0997L9.29973 14.9003ZM12.2569 14.407C12.5667 14.1321 12.595 13.6581 12.3201 13.3483C12.0453 13.0384 11.5712 13.0101 11.2614 13.285L12.2569 14.407ZM11.1691 14.3091C11.4249 14.6349 11.8963 14.6917 12.2222 14.436C12.548 14.1802 12.6048 13.7088 12.3491 13.3829L11.1691 14.3091ZM11.186 11.4467C11.0185 11.0678 10.5756 10.8966 10.1968 11.0641C9.81796 11.2316 9.64667 11.6745 9.8142 12.0533L11.186 11.4467ZM12.3609 13.4024C12.1137 13.07 11.6439 13.001 11.3115 13.2482C10.9792 13.4954 10.9101 13.9652 11.1573 14.2976L12.3609 13.4024ZM13.8953 16.6608C14.2602 16.8567 14.7149 16.7198 14.9109 16.3548C15.1068 15.9899 14.9699 15.5352 14.605 15.3392L13.8953 16.6608ZM8.00012 10.5H12.0001V9H8.00012V10.5ZM12.7501 9.75V8H11.2501V9.75H12.7501ZM12.0001 10.5H15.5001V9H12.0001V10.5ZM15.5001 10.5H16.0001V9H15.5001V10.5ZM14.8864 9.31885C13.8552 10.7867 12.6412 12.1172 11.2737 13.2783L12.2445 14.4217C13.7091 13.1782 15.0093 11.7532 16.1138 10.1811L14.8864 9.31885ZM10.2005 16.0997C10.7113 15.7161 11.4531 15.1201 12.2569 14.407L11.2614 13.285C10.4871 13.9719 9.77692 14.5419 9.29973 14.9003L10.2005 16.0997ZM12.3491 13.3829C11.8824 12.7884 11.4917 12.1379 11.186 11.4467L9.8142 12.0533C10.1703 12.8586 10.6255 13.6164 11.1691 14.3091L12.3491 13.3829ZM11.1573 14.2976C11.8855 15.2767 12.8203 16.0835 13.8953 16.6608L14.605 15.3392C13.7239 14.8661 12.9578 14.2048 12.3609 13.4024L11.1573 14.2976Z"
+              fill="#000000"
+            />
+          </svg>
+        </button>
+        <input type="search" placeholder="Search Of Corses" />
+        <ul>
+          <li><a href="#">Create an account</a></li>
+          <li><a href="#">Log in</a></li>
+        </ul>
+      </nav>
+      <!-- Home Page -->
+      <div class="home-page">
+        <h1>
+          A comprehensive platform with everything a student needs to excel
+        </h1>
         <p>
-          In Betaden, we have selected for you a selection of the best
-          teachers in Egypt, each of whom has extensive experience, an easy
-          way of explaining, and makes you understand the information the
-          first time!
+          An integrated platform that helps you study correctly, choose your
+          teachers, and achieve your highest grades in high school with ease and
+          comfort.
         </p>
-      </div>
-      <div class="box-show-card">
-        <div class="selectors-stage">
-          <label for="">Your stage and your studies:</label>
-          <select name="select-stage" id="">
-            <option value="">First year of middle school</option>
-            <option value="">Second preparatory grade</option>
-            <option value="">Third Preparatory Grade</option>
-            <option value="">First year of secondary school</option>
-            <option value="">Second year of secondary school</option>
-            <option value="">Third year of secondary school</option>
-          </select>
-            <select name="" id="">
-            <option value="">Literary</option>
-            <option value="">Scientific</option>
-            <option value="">Mathematical</option>
-            <option value="">Al-Azhar</option>
-          </select>
-        </div>
-        <div class="switch-teacher">
-          <button id="go-left">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              aria-hidden="true"
-              role="img"
-              class="iconify iconify--mdi"
-              width="2em"
-              height="2em"
-              preserveAspectRatio="xMidYMid meet"
-              viewBox="0 0 24 24"
-              >
-              <path
-                fill="currentColor"
-                d="M15.41 16.58L10.83 12l4.58-4.59L14 6l-6 6l6 6z"
-              ></path>
-            </svg>
-          </button>
-          <button id="go-right">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              aria-hidden="true"
-              role="img"
-              class="iconify iconify--mdi"
-              width="2em"
-              height="2em"
-              preserveAspectRatio="xMidYMid meet"
-              viewBox="0 0 24 24"
-              >
-              <path
-                fill="currentColor"
-                d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6z"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="flow-card-teacher">
-        <a href="#" class="card">
-          <div class="ditails">
-            <img src="image/one.png" alt="" />
-            <div class="information-teacher">
-              <h3>TEACHER-ONE</h1>
-              <hr />
-              <p>BLA BLA BLA BLA</p>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="card">
-          <div class="ditails">
-            <img src="image/two.png" alt="" />
-            <div class="information-teacher">
-              <h3>TEACHER-ONE</h1>
-              <hr />
-              <p>BLA BLA BLA BLA</p>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="card">
-          <div class="ditails">
-            <img src="image/three.png" alt="" />
-            <div class="information-teacher">
-              <h3>TEACHER-ONE</h1>
-              <hr />
-              <p>BLA BLA BLA BLA</p>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="card">
-          <div class="ditails">
-            <img src="image/four.png" alt="" />
-            <div class="information-teacher">
-              <h3>TEACHER-ONE</h1>
-              <hr />
-              <p>BLA BLA BLA BLA</p>
-            </div>
-          </div>
-        </a>
+        <a href="#Singin">Start your journey</a>
       </div>
     </div>
-  </div>
-  <script src="js/master.js"></script>
+    <!-- Teacher Information -->
+    <div class="teacher">
+      <div class="container">
+        <div class="text-intro">
+          <h1>Our teachers are not like any other teachers!</h1>
+          <p>
+            In Betaden, we have selected for you a selection of the best
+            teachers in Egypt, each of whom has extensive experience, an easy
+            way of explaining, and makes you understand the information the
+            first time!
+          </p>
+        </div>
+        <div class="box-show-card">
+          <div class="selectors-stage">
+            <label for="">Your stage and your studies:</label>
+            <select name="select-stage" id="">
+              <option value="">First year of middle school</option>
+              <option value="">Second preparatory grade</option>
+              <option value="">Third Preparatory Grade</option>
+              <option value="">First year of secondary school</option>
+              <option value="">Second year of secondary school</option>
+              <option value="">Third year of secondary school</option>
+            </select>
+            <select name="" id="">
+              <option value="">Literary</option>
+              <option value="">Scientific</option>
+              <option value="">Mathematical</option>
+              <option value="">Al-Azhar</option>
+            </select>
+          </div>
+          <div class="switch-teacher">
+            <button id="go-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--mdi"
+                width="2em"
+                height="2em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M15.41 16.58L10.83 12l4.58-4.59L14 6l-6 6l6 6z"
+                ></path>
+              </svg>
+            </button>
+            <button id="go-right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--mdi"
+                width="2em"
+                height="2em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="flow-card-teacher">
+          <a href="#" class="card">
+            <div class="ditails">
+              <img src="image/one.png" alt="" />
+              <div class="information-teacher">
+                <h3>TEACHER-ONE</h3>
+                <hr />
+                <p>BLA BLA BLA BLA</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="ditails">
+              <img src="image/two.png" alt="" />
+              <div class="information-teacher">
+                <h3>TEACHER-ONE</h3>
+                <hr />
+                <p>BLA BLA BLA BLA</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="ditails">
+              <img src="image/three.png" alt="" />
+              <div class="information-teacher">
+                <h3>TEACHER-ONE</h3>
+                <hr />
+                <p>BLA BLA BLA BLA</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="ditails">
+              <img src="image/four.png" alt="" />
+              <div class="information-teacher">
+                <h3>TEACHER-ONE</h3>
+                <hr />
+                <p>BLA BLA BLA BLA</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- How We Work -->
+    <div class="we-work">
+      <img src="image/how.png" alt="" class="cloud-photo" />
+      <div class="container">
+        <div class="text-info">
+          <h1>How does <span>Betadine</span> work?</h1>
+          <p>
+            Every step in the platform is designed to make your study journey
+            easier and clearer:
+          </p>
+        </div>
+        <div class="card-work-flow">
+          <div class="card-1 flex-card number">
+            <div class="text-ditails">
+              <h4>Choose your class and subject</h4>
+              <p>
+                First, you choose your grade level (first, second, or third year
+                of secondary school), and then you choose the subject you want
+                to study.
+              </p>
+            </div>
+          </div>
+          <div class="card-2 flex-card number">
+            <div class="text-ditails">
+              <h4>Check out the teachers and courses</h4>
+              <p>
+                You will find a list of the best teachers for each subject, and
+                courses divided by topic and review.
+              </p>
+            </div>
+          </div>
+          <div class="card-3 flex-card number">
+            <div class="text-ditails">
+              <h4>Enroll in the course</h4>
+              <p>
+                Found a course you like? Click "Enroll Now" and start learning
+                immediately! You can access it anytime from your mobile phone or
+                laptop.
+              </p>
+            </div>
+            <div class="photo-show">
+              <img src="image/book-how-en.svg" alt="" />
+            </div>
+          </div>
+          <div class="card-4 flex-card number">
+            <div class="text-ditails">
+              <h4>Study and practice.</h4>
+              <p>
+                Watch videos, solve exams, earn points, and return to the
+                content whenever you like.
+              </p>
+            </div>
+            <div class="photo-show">
+              <img src="image/student-how-en.svg" alt="" />
+            </div>
+          </div>
+          <div class="card-5 flex-card number">
+            <div class="text-ditails">
+              <h4>Ask, participate, and compete.</h4>
+              <p>
+                Join discussion groups, ask about anything unclear, share your
+                ideas, and see where you stand among your peers.
+              </p>
+            </div>
+            <div class="p-w">
+              <img src="image/text-how-en.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/master.js"></script>
   </body>
 </html>

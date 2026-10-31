@@ -33,6 +33,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  counter-reset: items;
+}
+
 html {
   scroll-behavior: smooth;
   background-color: var(--color-bg);
@@ -66,6 +70,7 @@ button {
   box-shadow: 0px 2px 5px 0px var(--color-shadow);
   transform: translateY(-5px);
 }
+
 .first-page {
   width: 100%;
   height: 100vh;
@@ -104,19 +109,31 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
   box-shadow: 0px 3px 6px 0 #0000003a;
 }
 
 .box-logo {
   width: 70px;
+  transform: scale(1.2);
 }
 
-.navbar > button {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #1565c0;
+.navbar button {
+  border: none;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.navbar button svg {
+  width: 32px;
+  height: 32px;
+}
+.navbar #theme-toggle svg:first-child {
+  display: none;
+}
+
+.navbar button:hover {
+  transform: scale(1.2);
 }
 
 .navbar > input {
@@ -192,18 +209,21 @@ button {
   padding: 15px 20px;
   border-radius: 15px;
   transition: 0.5s;
+  font-weight: bold;
   border: 1px solid transparent;
 }
 
 .home-page a:hover {
   background-color: transparent;
   border: 1px solid var(--color-secondary);
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 /* Teacher Section */
 .teacher {
   background-color: var(--color-primary);
+  position: relative;
+  z-index: 1;
 }
 
 .teacher .container {
@@ -331,4 +351,111 @@ button {
 
 .teacher .flow-card-teacher .card .ditails .information-teacher p {
   color: rgba(0, 0, 0, 0.689);
+}
+
+/* How We Work Section */
+
+.we-work {
+  background-color: var(--color-bg);
+  position: relative;
+}
+
+.we-work .cloud-photo {
+  max-width: 40%;
+  position: absolute;
+  top: -30%;
+  right: 0;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+
+.we-work .container {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.we-work .text-info h1 span {
+  font-weight: 900;
+}
+
+.we-work .text-info p {
+  max-width: 380px;
+}
+
+.we-work .card-work-flow {
+  padding: 40px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.we-work .card-work-flow .flex-card {
+  display: flex;
+  align-items: end;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.we-work .card-work-flow .number {
+  counter-increment: items;
+  position: relative;
+  overflow: hidden;
+}
+
+.we-work .card-work-flow .number::after {
+  content: counter(items);
+  position: absolute;
+  font-size: 60px;
+  top: 30px;
+  left: 30px;
+}
+
+.we-work .card-work-flow .card-1 {
+  background-color: #0434c2;
+  color: var(--color-on-primary);
+}
+.we-work .card-work-flow .card-2 {
+  background-color: #b9e3f7;
+  color: var(--color-on-accent);
+}
+
+.we-work .card-work-flow .card-3 {
+  background-color: #ffe29f;
+  color: var(--color-on-secondary);
+  grid-column: span 2;
+}
+
+.we-work .card-work-flow .card-4 {
+  background-color: #a3baff;
+  color: var(--color-on-accent);
+  grid-column: span 2;
+}
+
+.we-work .card-work-flow .card-5 {
+  background-color: #ffe29f85;
+  color: var(--color-on-secondary);
+  grid-column: span 2;
+}
+
+.we-work .card-work-flow .card-5 .p-w {
+  transform: translate(24%, -40%);
+}
+
+.we-work .card-work-flow .card-5 .p-w img {
+  width: 250px;
+}
+
+.we-work .card-work-flow .text-ditails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.we-work .card-work-flow .text-ditails h4 {
+  font-size: 18px;
+}
+
+.we-work .card-work-flow .photo-show {
+  transform: translate(20%, 20%);
 }
