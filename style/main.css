@@ -459,3 +459,170 @@ button {
 .we-work .card-work-flow .photo-show {
   transform: translate(20%, 20%);
 }
+
+/* For You Section */
+
+.for-you {
+  background-image: linear-gradient(to top, #82bcff77, var(--color-bg));
+}
+
+.for-you .container {
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.for-you .text-you {
+  padding: 15px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.for-you .text-you h1 {
+  font-size: 56px;
+}
+
+.for-you .text-you p {
+  max-width: 385px;
+  font-weight: 500;
+}
+
+.for-you .photo-for-you {
+  background: var(--color-surface);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.for-you .box-flow-materials {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.for-you .long-par {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.for-you .long-par select {
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid var(--color-on-accent);
+  border-radius: 10px;
+  color: var(--color-on-accent);
+  outline: none;
+}
+
+.for-you .box-flow-materials .long-par .switch-courses {
+  display: flex;
+  gap: 10px;
+}
+
+.for-you .box-flow-materials .long-par .switch-courses button {
+  color: var(--color-on-primary);
+  background-color: var(--color-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid var(--color-primary);
+  outline: none;
+  transition: 0.3s;
+}
+
+@keyframes pop-color2 {
+  0% {
+    box-shadow: 0px 0px 3px 3px rgb(110 126 175);
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+
+.for-you .box-flow-materials .long-par .switch-courses button:hover {
+  background-color: #081d5e;
+}
+
+.for-you .box-flow-materials .long-par .switch-courses button:focus {
+  animation: pop-color2 0.6s alternate;
+}
+
+.for-you .flow-card-courses {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 10px;
+  margin-top: 60px;
+}
+
+.for-you .flow-card-courses .style {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #3366ff;
+  color: var(--color-bg);
+  min-width: 300px;
+  gap: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.for-you .flow-card-courses .style:hover {
+  background-color: #1a43be;
+}
+
+.for-you .flow-card-courses .style .course-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  height: 128px;
+  border-radius: 10px;
+  background-color: #5c85ff;
+  color: var(--color-bg);
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.for-you .flow-card-courses .style:hover .course-name {
+  background-color: #2855dd;
+}
+
+.for-you .flow-card-courses .style .course-name span {
+  width: 48px;
+  height: 48px;
+  display: flex;
+}
+
+.for-you .flow-card-courses .style .ditails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.for-you .flow-card-courses .style .ditails .info-course {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.for-you .flow-card-courses .style .ditails .info-course p {
+  display: flex;
+}
+.for-you .flow-card-courses .style .ditails .info-course span {
+  margin-left: auto;
+}
+
+.for-you .flow-card-courses a {
+  text-align: center;
+  background-color: var(--color-surface);
+  color: #3366ff;
+  padding: 18px;
+  border-radius: 10px;
+}
